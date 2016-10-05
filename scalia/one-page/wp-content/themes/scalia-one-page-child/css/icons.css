@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'scalia-icons';
+	src:url('../fonts/scalia-opc-icons.eot?-yiqymz');
+	src:url('../fonts/scalia-opc-icons.eot?#iefix-yiqymz') format('embedded-opentype'),
+		url('../fonts/scalia-opc-icons.woff?-yiqymz') format('woff'),
+		url('../fonts/scalia-opc-icons.ttf?-yiqymz') format('truetype'),
+		url('../fonts/scalia-opc-icons.svg?-yiqymz#scalia-opc-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'scalia-user-icons';
+	src:url('../fonts/scalia-opc-user-icons.eot?-yiqymz');
+	src:url('../fonts/scalia-opc-user-icons.eot?#iefix-yiqymz') format('embedded-opentype'),
+		url('../fonts/scalia-opc-user-icons.woff?-yiqymz') format('woff'),
+		url('../fonts/scalia-opc-user-icons.ttf?-yiqymz') format('truetype'),
+		url('../fonts/scalia-opc-user-icons.svg?-yiqymz#scalia-opc-user-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

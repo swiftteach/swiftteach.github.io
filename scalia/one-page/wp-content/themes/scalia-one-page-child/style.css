@@ -1,0 +1,228 @@
+
+@font-face {
+	font-family: 'scalia-icons';
+	src:url('fonts/scalia-opc-icons.eot?-yiqymz');
+	src:url('fonts/scalia-opc-icons.eot?#iefix-yiqymz') format('embedded-opentype'),
+		url('fonts/scalia-opc-icons.woff?-yiqymz') format('woff'),
+		url('fonts/scalia-opc-icons.ttf?-yiqymz') format('truetype'),
+		url('fonts/scalia-opc-icons.svg?-yiqymz#scalia-opc-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'scalia-user-icons';
+	src:url('fonts/scalia-opc-user-icons.eot?-yiqymz');
+	src:url('fonts/scalia-opc-user-icons.eot?#iefix-yiqymz') format('embedded-opentype'),
+		url('fonts/scalia-opc-user-icons.woff?-yiqymz') format('woff'),
+		url('fonts/scalia-opc-user-icons.ttf?-yiqymz') format('truetype'),
+		url('fonts/scalia-opc-user-icons.svg?-yiqymz#scalia-opc-user-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.sc-contacts {
+	text-align: center;
+}
+.sc-contacts-item {
+	display: inline-block;
+	margin: 0 20px;
+}
+.site-footer .socials {
+	text-align: center;
+}
+.contact-form-style-1 {
+	text-align: center;
+}
+.contact-form-style-1 > p {
+	display: inline-block;
+	width: 100%;
+}
+.contact-form-style-1 input {
+	border: medium none;
+	padding: 25px;
+	width: 50%;
+}
+.contact-form-style-1  .wpcf7-text {
+	border: medium none;
+	margin-bottom: 10px !important;
+	margin-top: 10px;
+	padding: 15px;
+    height: 60px;
+}
+.contact-form-style-1 textarea {
+	border: medium none;
+	margin-top: 10px;
+}
+.wpcf7-form-control.wpcf7-submit {
+	padding: 10px 57px;
+}
+.wpcf7-form-control.wpcf7-submit {
+	padding: 8px 57px;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #000;
+	width: auto;
+}
+.wpcf7-form .wpcf7-validation-errors {
+    border: 2px solid #d55271;
+    border-radius: 5px;
+}
+.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {
+    float: left;
+    margin: 0 auto;
+    margin-left: 25%;
+    width: 50%;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.wpcf7-form div.wpcf7-mail-sent-ok {
+    float: left;
+    margin: 0 auto;
+    margin-left: 25%!important;
+    width: 50%;
+    margin-bottom: 20px !important;
+    text-align: center;
+
+}@media  (max-width: 768px){
+    .wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {
+        margin-left: 10%;
+        width: 80%;
+
+    }
+    .wpcf7-form div.wpcf7-mail-sent-ok {
+        margin-left: 10%!important;
+        width: 80%;
+    }
+    .custom-mailchimp .mc4wp-form input[type="email"] {
+        min-width: auto !important;
+    }
+    .your-message {
+        min-width: auto !important;
+    }
+}
+.flex-control-paging .flex-active:hover {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+.flex-control-paging a:hover {
+    background-color: #000000 !important;
+}
+.wpcf7-form-control.wpcf7-submit:hover {
+	background-color: #f15364;
+	border: 1px solid #f15364;
+}
+.contact-form-style-1 textarea {
+	height: 165px;
+	max-width: 587px !important;
+}
+.wpcf7-form-control-wrap.your-name:before {
+    color: #000000;
+    content: "\e647";
+    font-family: scalia-user-icons;
+    font-size: 24px;
+    left: -35px;
+    position: absolute;
+    top: 6px;
+}
+.wpcf7-form-control-wrap.your-email:before {
+    color: #000000;
+    content: "\e62b";
+    font-family: scalia-user-icons;
+    font-size: 24px;
+    left: -35px;
+    position: absolute;
+    top: 6px;
+}
+.wpcf7-form-control-wrap.your-message:before {
+    color: #000000;
+    content: "\e652";
+    font-family: scalia-user-icons;
+    font-size: 24px;
+    left: -35px;
+    position: absolute;
+    top: 22px;
+}
+
+.your-message {
+    display: inline-block;
+    min-width: 592px;
+}
+
+.menu-item a:before {
+    content: "";
+    font-family: scalia-icons;
+    font-size: 11px;
+    margin-top: 0;
+    padding-right: 5px;
+    vertical-align: bottom;
+}
+
+.team-person-email a:before {
+    content: ">";
+    font-family: "scalia-icons";
+    font-size: 21px;
+    font-weight: normal;
+    vertical-align: bottom;
+}
+
+
+.sc-icon-size-medium {
+	font-size: 47px;
+	width: 94px;
+	height: 94px;
+	line-height: 90px;
+}
+.sc-icon-size-medium.sc-simple-icon {
+	width: 47px;
+	height: 47px;
+	line-height: 47px;
+}
+.custom-mailchimp  .mc4wp-form {
+    display: inline-block;
+}
+.custom-mailchimp  .mc4wp-form input[type="submit"] {
+    background: none repeat scroll 0 0 #ff9955;
+    border: 0 none;
+    padding: 9px 58px;
+}
+.wpb_text_column.wpb_content_element.custom-mailchimp {
+    text-align: center;
+}
+.custom-mailchimp label {
+    display: none;
+}
+.custom-mailchimp input {
+    float: left;
+    margin-top: 0px;
+}
+.custom-mailchimp  .mc4wp-form input[type="email"] {
+    width: 100%;
+}
+.custom-mailchimp  #mc4wp-form-1 > p {
+    float: left;
+    margin-right: 40px;
+}
+.custom-mailchimp  .mc4wp-form input[type="email"] {
+    padding: 12px 22px;
+    min-width: 550px;
+    border: medium none;
+}
+.custom-mailchimp .mc4wp-form input[type="email"] {
+    border: medium none;
+    min-width: 550px;
+    padding: 12px 22px;
+}
+.wpcf7-form-control.wpcf7-submit {
+    margin-top:53px;
+}
+.sc-iconed-title {
+    text-transform: none;
+}
+
+#footer-socials {
+    float: none;
+    padding-bottom: 40px;
+}
+
+
