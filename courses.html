@@ -1,53 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>欢迎访问代码课</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet"
-        href="bootstrap.min.css">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="bootstrap.min.js"></script>
-  <style type="text/css">
-      .col-sm-6,.col-sm-12{
-        font-size: 30px;
-        margin:auto;
-      }
-      .col-sm-10{
-        float: none;
-        margin: 0 auto;
-      }
-      .center{
-         width:90%;
-         margin: auto;
-      }
-       body {
-          padding: 0;
-          margin: 0;
-       }
-       .outer-container {
-          position: relative;
-          height: 0;
-          padding-bottom: 56.25%;
-        }
-        .outer-container2{
-          max-width: 100%;
-          height: auto;
-        }
-        .BrightcoveExperience {
-           width:90%;
-           height:480px;
-           margin: auto;
-        }
-
-
-
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>iOS Android Scratch Blockly Java C++</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <style type="text/css">
+    .col-sm-6,.col-sm-12{
+      font-size: 30px;
+      margin:auto;
+    }
+    .col-sm-10{
+      float: none;
+      margin: 0 auto;
+    }
+    .center{
+     width:90%;
+     margin: auto;
+   }
+   body {
+    padding: 0;
+    margin: 0;
+  }
+  .outer-container {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+  .outer-container2{
+    max-width: 100%;
+    height: auto;
+  }
+  .BrightcoveExperience {
+   width:90%;
+   height:600px;
+   margin: auto;
+  }
   </style>
 
-    <script>
+  <script>
   $( function() {
     var icons = {
       header: "ui-icon-circle-arrow-e",
@@ -58,234 +54,396 @@
       collapsible: true,
       heightStyle: "content"
     });
-    $( "#toggle" ).button().on( "click", function() {
-      if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
-        $( "#accordion" ).accordion( "option", "icons", null );
-      } else {
-        $( "#accordion" ).accordion( "option", "icons", icons );
-      }
+
+    $( "#accordion2" ).accordion({
+      icons: icons,
+      collapsible: true,
+      heightStyle: "content"
     });
+
+
   } );
   </script>
-</head>
-<body>
+  </head>
+  <body>
 
-<div class="container-fluid">
-  <!-- the title for buy or renting ITEM -->
-  <div class="row">
-    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
-  </div>
+    <div class="container-fluid">
+      <!-- the title for buy or renting ITEM -->
+      <div class="row">
+        <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+      </div>
 
-  <div class="row">
-    <div class="col-sm-4" style="background-color:lavenderblush;"></div>
-    <div class="col-sm-4" style="background-color:white;"><p style="text-align: center;">
-      欢迎访问<strong><a href="http://tianhetianyi.com/">天合天益（北京）科技有限公司</a></strong></p></div>
-    <div class="col-sm-4" style="background-color:lavenderblush;"></div>
-  </div>
-
-
-  <div class="row">
-    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
-  </div>
-  <!-- 直播html代码-->
-  <div id="player" class="BrightcoveExperience">
-    <script type="text/javascript" charset="utf-8"
-            src="http://yuntv.letv.com/player/vod/bcloud.js"></script>
-    <script>
-    function GetQueryString(name)
-    {
-         var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
-         var r = window.location.search.substr(1).match(reg);
-         if(r!=null)return  unescape(r[2]); return null;
-    }
-    // GET the video from the remote server hosted by lecloud
-    var vu = GetQueryString("vu")
-    var player = new CloudVodPlayer();
-    player.init({uu:"pi2rhvgpfw",vu:vu});
-    </script>
-  </div>
+      <div class="row">
+        <div class="col-sm-4" style="background-color:lavenderblush;"></div>
+        <div class="col-sm-4" style="background-color:white;"><p style="text-align: center;">
+          欢迎访问<strong><a href="http://tianhetianyi.com/">天合天益（北京）科技有限公司</a></strong></p></div>
+          <div class="col-sm-4" style="background-color:lavenderblush;"></div>
+        </div>
 
 
-
-
-<!--课程介绍-->
-
-<div id="accordion" class="col-sm-10">
-  <h3>Section 1</h3>
-  <div>
-    <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
-  </div>
-  <h3>Section 2</h3>
-  <div>
-    <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
-  </div>
-  <h3>Section 3</h3>
-  <div>
-    <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
-    <ul>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
-    </ul>
-  </div>
-  <h3>Section 4</h3>
-  <div>
-    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-  </div>
-  <h3>Section 5</h3>
-  <div>
-    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-  </div>
-
-    <h3>Section 6</h3>
-  <div>
-    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-  </div>
-
-
-    <h3>Section 7</h3>
-  <div>
-    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-  </div>
-
-    <h3>Section 8</h3>
-  <div>
-    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-  </div>
-
-    <h3>Section 9</h3>
-  <div>
-    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-  </div>
-
-    <h3>Section 10</h3>
-  <div>
-    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-  </div>
-
-  <h3>Section 1</h3>
-  <div>
-    <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
-  </div>
-  <h3>Section 2</h3>
-  <div>
-    <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
-  </div>
-  <h3>Section 3</h3>
-  <div>
-    <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
-    <ul>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
-    </ul>
-  </div>
-  <h3>Section 4</h3>
-  <div>
-    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-  </div>
-  <h3>Section 5</h3>
-  <div>
-    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-  </div>
-
-    <h3>Section 6</h3>
-  <div>
-    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-  </div>
-
-
-    <h3>Section 7</h3>
-  <div>
-    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-  </div>
-
-    <h3>Section 8</h3>
-  <div>
-    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-  </div>
-
-    <h3>Section 9</h3>
-  <div>
-    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-  </div>
-
-    <h3>Section 10</h3>
-  <div>
-    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-  </div>
-
-
-
-
-
-
-
-
-
-
-</div>
-</div>
-
-<script>
-      var id = GetQueryString("id");
-      $(function () {
-          $.ajax({
-              type: 'POST',
-              url: 'http://studyfordream.com/house/wholeHouseRentDetail',
-              data: { "id": id },
-              dataType: 'json',
-              success: function (data) {
-                  document.getElementById('title').innerHTML = data.data.title;
-                  document.getElementById('distinct_name').innerHTML = data.data.distinct_name;
-                  var d = new Date(data.data.create_date);
-                  document.getElementById('create_date').innerHTML = (d.getMonth() + 1) + '/' + d.getDate() + '/' +  d.getFullYear();
-                  document.getElementById('price').innerHTML = data.data.price;
-                  document.getElementById('area').innerHTML = data.data.area;
-                  document.getElementById('room_type').innerHTML = data.data.room_type;
-                  document.getElementById('orientation').innerHTML = data.data.orientation;
-                  document.getElementById('floors').innerHTML = data.data.floors;
-                  document.getElementById('decoration').innerHTML = data.data.decoration;
-                  document.getElementById('build_year').innerHTML = data.data.build_year;
-                  document.getElementById('house_right').innerHTML = data.data.house_right;
-                  document.getElementById('house_type').innerHTML = data.data.house_type;
-                  document.getElementById('detail').innerHTML = data.data.detail;
+        <div class="row">
+          <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+        </div>
+        <!-- 直播html代码-->
+        <div id="player" class="BrightcoveExperience">
+          <script type="text/javascript" charset="utf-8"
+          src="http://yuntv.letv.com/player/vod/bcloud.js"></script>
+          <script>
+              function GetQueryString(name)
+              {
+               var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+               var r = window.location.search.substr(1).match(reg);
+               if(r!=null)return  unescape(r[2]); return null;
               }
-          });
-      });
+              // GET the video from the remote server hosted by lecloud
+              var vu = GetQueryString("vu")
+              var player = new CloudVodPlayer();
+              player.init({uu:"pi2rhvgpfw",vu:vu});
+        </script>
+        </div>
 
 
 
-</script>
-</body>
-</html>
+
+    <!--课程介绍-->
+
+    <div id="accordion" class="col-sm-10">
+      <h3>Section 1</h3>
+      <div>
+        <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+      </div>
+      <h3>Section 2</h3>
+      <div>
+        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+      </div>
+      <h3>Section 3</h3>
+      <div>
+        <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+        <ul>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+        </ul>
+      </div>
+      <h3>Section 4</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+      <h3>Section 5</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+      <h3>Section 6</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+
+      <h3>Section 7</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+      <h3>Section 8</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+      <h3>Section 9</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+      <h3>Section 10</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+      <h3>Section 1</h3>
+      <div>
+        <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+      </div>
+      <h3>Section 2</h3>
+      <div>
+        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+      </div>
+      <h3>Section 3</h3>
+      <div>
+        <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+        <ul>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+        </ul>
+      </div>
+      <h3>Section 4</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+      <h3>Section 5</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+      <h3>Section 6</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+
+      <h3>Section 7</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+      <h3>Section 8</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+      <h3>Section 9</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+      <h3>Section 10</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+    </div>
+
+
+
+
+    <!--iOS-->
+
+        <div class="row">
+          <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+        </div>
+            <!-- 直播html代码-->
+        <div id="player" class="BrightcoveExperience">
+          <script type="text/javascript" charset="utf-8"
+          src="http://yuntv.letv.com/player/vod/bcloud.js"></script>
+          <script>
+              function GetQueryString(name)
+              {
+               var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+               var r = window.location.search.substr(1).match(reg);
+               if(r!=null)return  unescape(r[2]); return null;
+              }
+              // GET the video from the remote server hosted by lecloud
+              var vu = GetQueryString("vu")
+              var player = new CloudVodPlayer();
+              player.init({uu:"pi2rhvgpfw",vu:vu});
+        </script>
+        </div>
+
+
+
+
+    <!--课程介绍-->
+
+    <div id="accordion2" class="col-sm-10">
+      <h3>Section 1</h3>
+      <div>
+        <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+      </div>
+      <h3>Section 2</h3>
+      <div>
+        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+      </div>
+      <h3>Section 3</h3>
+      <div>
+        <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+        <ul>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+        </ul>
+      </div>
+      <h3>Section 4</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+      <h3>Section 5</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+      <h3>Section 6</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+
+      <h3>Section 7</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+      <h3>Section 8</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+      <h3>Section 9</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+      <h3>Section 10</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+      <h3>Section 1</h3>
+      <div>
+        <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+      </div>
+      <h3>Section 2</h3>
+      <div>
+        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+      </div>
+      <h3>Section 3</h3>
+      <div>
+        <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+        <ul>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+        </ul>
+      </div>
+      <h3>Section 4</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+      <h3>Section 5</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+      <h3>Section 6</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+
+      <h3>Section 7</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+      <h3>Section 8</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+      <h3>Section 9</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+
+      <h3>Section 10</h3>
+      <div>
+        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <script>
+  var id = GetQueryString("id");
+  $(function () {
+    $.ajax({
+      type: 'POST',
+      url: 'http://studyfordream.com/house/wholeHouseRentDetail',
+      data: { "id": id },
+      dataType: 'json',
+      success: function (data) {
+        document.getElementById('title').innerHTML = data.data.title;
+        document.getElementById('distinct_name').innerHTML = data.data.distinct_name;
+        var d = new Date(data.data.create_date);
+        document.getElementById('create_date').innerHTML = (d.getMonth() + 1) + '/' + d.getDate() + '/' +  d.getFullYear();
+        document.getElementById('price').innerHTML = data.data.price;
+        document.getElementById('area').innerHTML = data.data.area;
+        document.getElementById('room_type').innerHTML = data.data.room_type;
+        document.getElementById('orientation').innerHTML = data.data.orientation;
+        document.getElementById('floors').innerHTML = data.data.floors;
+        document.getElementById('decoration').innerHTML = data.data.decoration;
+        document.getElementById('build_year').innerHTML = data.data.build_year;
+        document.getElementById('house_right').innerHTML = data.data.house_right;
+        document.getElementById('house_type').innerHTML = data.data.house_type;
+        document.getElementById('detail').innerHTML = data.data.detail;
+      }
+    });
+  });
+
+
+
+  </script>
+  </body>
+  </html>
