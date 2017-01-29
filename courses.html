@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>欢迎访问合益合伙人</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+        href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <style type="text/css">
+      .col-sm-6,.col-sm-12{
+        font-size: 30px;
+        margin:auto;
+      }
+      .center{
+         width:90%;
+         margin: auto;
+      }
+       body {
+          padding: 0;
+          margin: 0;
+       }
+       .outer-container {
+          position: relative;
+          height: 0;
+          padding-bottom: 56.25%;
+        }
+        .outer-container2{
+          max-width: 100%;
+          height: auto;
+        }
+        .BrightcoveExperience {
+           width:90%;
+           height:480px;
+           margin: auto;
+        }
+
+
+
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <!-- the title for buy or renting ITEM -->
+  <div class="row">
+    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavenderblush;"></div>
+    <div class="col-sm-4" style="background-color:white;"><p style="text-align: center;">
+      欢迎访问<strong><a href="http://tianhetianyi.com/">天合天益（北京）科技有限公司</a></strong></p></div>
+    <div class="col-sm-4" style="background-color:lavenderblush;"></div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+  </div>
+
+
+  <!-- 直播html代码-->
+  <div id="player" class="BrightcoveExperience">
+    <script type="text/javascript" charset="utf-8"
+            src="http://yuntv.letv.com/player/vod/bcloud.js"></script>
+
+    <script>
+    function GetQueryString(name)
+    {
+         var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+         var r = window.location.search.substr(1).match(reg);
+         if(r!=null)return  unescape(r[2]); return null;
+    }
+
+    // GET the video from the remote server hosted by lecloud
+    var vu = GetQueryString("vu")
+
+            var player = new CloudVodPlayer();
+            player.init({uu:"pi2rhvgpfw",vu:vu});
+
+
+
+
+    </script>
+
+  </div>
+  <!--the structured data-->
+  <div class="row">
+    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+  </div>
+
+  <div class="row">
+    <div id="title" class="col-sm-12" style="background-color:lavenderblush;"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+  </div>
+
+  <div class="row">
+    <div id="distinct_name" class="col-sm-6" style="background-color:lavender;"></div>
+    <div id="create_date" class="col-sm-6" style="background-color:lavenderblush;"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+  </div>
+
+  <div class="row">
+    <div id="price" class="col-sm-12" style="background-color:lavender;color: red;"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+  </div>
+
+  <div class="row">
+    <div id="area" class="col-sm-6" style="background-color:lavender;"></div>
+    <div id="room_type" class="col-sm-6" style="background-color:lavenderblush;"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+  </div>
+
+  <div class="row">
+    <div id="orientation" class="col-sm-6" style="background-color:lavender;"></div>
+    <div id="floors" class="col-sm-6" style="background-color:lavenderblush;"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+  </div>
+
+  <div class="row">
+    <div id="decoration" class="col-sm-6" style="background-color:lavender;"></div>
+    <div id="build_year" class="col-sm-6" style="background-color:lavenderblush;"></div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+  </div>
+
+  <div class="row">
+    <div id="detail" class="col-sm-12" style="background-color:lavender;"></div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4" style="background-color:white;"></div>
+    <div class="col-sm-4" style="background-color:white;"><img style="display:block;
+      margin:auto;" src="heyibrokers_WX.png"/></div>
+    <div class="col-sm-4" style="background-color:white;"><p style="text-align: center;">
+      扫描二维码到腾讯应用宝下载"合益合伙人"APP</p></div>
+  </div>
+</div>
+
+<script>
+      var id = GetQueryString("id");
+      $(function () {
+          $.ajax({
+              type: 'POST',
+              url: 'http://studyfordream.com/house/wholeHouseRentDetail',
+              data: { "id": id },
+              dataType: 'json',
+              success: function (data) {
+                  document.getElementById('title').innerHTML = data.data.title;
+                  document.getElementById('distinct_name').innerHTML = data.data.distinct_name;
+                  var d = new Date(data.data.create_date);
+                  document.getElementById('create_date').innerHTML = (d.getMonth() + 1) + '/' + d.getDate() + '/' +  d.getFullYear();
+                  document.getElementById('price').innerHTML = data.data.price;
+                  document.getElementById('area').innerHTML = data.data.area;
+                  document.getElementById('room_type').innerHTML = data.data.room_type;
+                  document.getElementById('orientation').innerHTML = data.data.orientation;
+                  document.getElementById('floors').innerHTML = data.data.floors;
+                  document.getElementById('decoration').innerHTML = data.data.decoration;
+                  document.getElementById('build_year').innerHTML = data.data.build_year;
+                  document.getElementById('house_right').innerHTML = data.data.house_right;
+                  document.getElementById('house_type').innerHTML = data.data.house_type;
+                  document.getElementById('detail').innerHTML = data.data.detail;
+              }
+          });
+      });
+
+
+
+</script>
+</body>
+</html>
