@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>欢迎访问合益合伙人</title>
+  <title>欢迎访问代码课</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet"
         href="bootstrap.min.css">
-  <script src="jquery.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="bootstrap.min.js"></script>
   <style type="text/css">
       .col-sm-6,.col-sm-12{
         font-size: 30px;
         margin:auto;
+      }
+      .col-sm-10{
+        float: none;
+        margin: 0 auto;
       }
       .center{
          width:90%;
@@ -39,6 +46,27 @@
 
 
   </style>
+
+    <script>
+  $( function() {
+    var icons = {
+      header: "ui-icon-circle-arrow-e",
+      activeHeader: "ui-icon-circle-arrow-s"
+    };
+    $( "#accordion" ).accordion({
+      icons: icons,
+      collapsible: true,
+      heightStyle: "content"
+    });
+    $( "#toggle" ).button().on( "click", function() {
+      if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
+        $( "#accordion" ).accordion( "option", "icons", null );
+      } else {
+        $( "#accordion" ).accordion( "option", "icons", icons );
+      }
+    });
+  } );
+  </script>
 </head>
 <body>
 
@@ -65,13 +93,10 @@
   <div class="row">
     <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
   </div>
-
-
   <!-- 直播html代码-->
   <div id="player" class="BrightcoveExperience">
     <script type="text/javascript" charset="utf-8"
             src="http://yuntv.letv.com/player/vod/bcloud.js"></script>
-
     <script>
     function GetQueryString(name)
     {
@@ -79,99 +104,57 @@
          var r = window.location.search.substr(1).match(reg);
          if(r!=null)return  unescape(r[2]); return null;
     }
-
     // GET the video from the remote server hosted by lecloud
     var vu = GetQueryString("vu")
-
-            var player = new CloudVodPlayer();
-            player.init({uu:"pi2rhvgpfw",vu:vu});
-
-
-
-
+    var player = new CloudVodPlayer();
+    player.init({uu:"pi2rhvgpfw",vu:vu});
     </script>
-
-  </div>
-  <!--the structured data-->
-  <div class="row">
-    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
-  </div>
-
-  <div class="row">
-    <div id="title" class="col-sm-12" style="background-color:lavenderblush;"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
-  </div>
-
-  <div class="row">
-    <div id="distinct_name" class="col-sm-6" style="background-color:lavender;"></div>
-    <div id="create_date" class="col-sm-6" style="background-color:lavenderblush;"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
-  </div>
-
-  <div class="row">
-    <div id="price" class="col-sm-12" style="background-color:lavender;color: red;"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
-  </div>
-
-  <div class="row">
-    <div id="area" class="col-sm-6" style="background-color:lavender;"></div>
-    <div id="room_type" class="col-sm-6" style="background-color:lavenderblush;"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
-  </div>
-
-  <div class="row">
-    <div id="orientation" class="col-sm-6" style="background-color:lavender;"></div>
-    <div id="floors" class="col-sm-6" style="background-color:lavenderblush;"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
-  </div>
-
-  <div class="row">
-    <div id="decoration" class="col-sm-6" style="background-color:lavender;"></div>
-    <div id="build_year" class="col-sm-6" style="background-color:lavenderblush;"></div>
   </div>
 
 
-  <div class="row">
-    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
-  </div>
-
-  <div class="row">
-    <div id="detail" class="col-sm-12" style="background-color:lavender;"></div>
-  </div>
 
 
-  <div class="row">
-    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12" style="background-color:white;">&nbsp;</div>
-  </div>
+<!--课程介绍-->
 
-  <div class="row">
-    <div class="col-sm-4" style="background-color:white;"></div>
-    <div class="col-sm-4" style="background-color:white;"><img style="display:block;
-      margin:auto;" src="heyibrokers_WX.png"/></div>
-    <div class="col-sm-4" style="background-color:white;"><p style="text-align: center;">
-      扫描二维码到腾讯应用宝下载"合益合伙人"APP</p></div>
+<div id="accordion" class="col-sm-10">
+  <h3>Section 1</h3>
+  <div>
+    <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
   </div>
+  <h3>Section 2</h3>
+  <div>
+    <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+  </div>
+  <h3>Section 3</h3>
+  <div>
+    <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  <h3>Section 4</h3>
+  <div>
+    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+  </div>
+</div>
+ 
+<button id="toggle">Toggle icons</button>
+
+
 </div>
 
 <script>
