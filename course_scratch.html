@@ -1,0 +1,140 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>iOS Android Scratch Blockly Java C++</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <style type="text/css">
+    .col-sm-6,.col-sm-12{
+      font-size: 30px;
+      margin:auto;
+    }
+    .col-sm-10{
+      float: none;
+      margin: 0 auto;
+    }
+    .center{
+     width:90%;
+     margin: auto;
+   }
+   body {
+    padding: 0;
+    margin: 0;
+  }
+  .outer-container {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+  .outer-container2{
+    max-width: 100%;
+    height: auto;
+  }
+  /*.BrightcoveExperience {
+   height:576px;
+   width: 924px;
+   margin: auto;
+  }*/
+
+ .BrightcoveExperience {
+   height:100%;
+   width: 100%;
+   margin: auto;
+  }
+
+
+.width {
+    width: 100%;
+    background: #000000;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    horizontal-align: center;
+    box-shadow: 0 0 4px rgba(0,0,0,.3);
+}
+.width:before {
+    content: '';
+    display: block;
+}
+.ratio4-3:before {padding-top: 56.25%;
+}
+
+.contenido {    
+   position: absolute;
+   top: 0; left: 0; bottom: 0; right: 0;
+   font-size: 1.5rem;
+   color: #000;
+}
+  </style>
+
+  <script>
+  $( function() {
+    var icons = {
+      header: "ui-icon-circle-arrow-e",
+      activeHeader: "ui-icon-circle-arrow-s"
+    };
+    $( "#accordion" ).accordion({
+      icons: icons,
+      collapsible: true,
+      heightStyle: "content"
+    });
+
+    $( "#accordion2" ).accordion({
+      icons: icons,
+      collapsible: true,
+      heightStyle: "content"
+    });
+
+
+  } );
+  </script>
+  </head>
+  <body>
+    <div class="container-fluid">
+    <!--iOS-->
+
+  <div class="row">
+    <div class="col-sm-1" style="background-color:white;">&nbsp;</div>
+    <div class="col-sm-10" style="background-color:white;">
+      <div class="width ratio4-3">
+        <div class="contenido">
+            <!-- 直播html代码-->
+          <div id="player" class="BrightcoveExperience">
+            <script type="text/javascript" charset="utf-8"
+            src="http://yuntv.letv.com/player/vod/bcloud.js"></script>
+            <script>
+              function GetQueryString(name)
+              {
+               var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+               var r = window.location.search.substr(1).match(reg);
+               if(r!=null)return  unescape(r[2]); return null;
+              }
+              // GET the video from the remote server hosted by lecloud
+              var vu = GetQueryString("vu")
+              var player = new CloudVodPlayer();
+              player.init({uu:"dvpouvvs8o",vu:"d6f38d781a", pu: "01530459EF"});
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1" style="background-color:white;">&nbsp;</div>
+  </div>
+
+    <!--课程介绍-->
+    <div id="accordion2" class="col-sm-10">
+      <h3>Scratch 等更多的青少年可视化编程教程</h3>
+      <div>
+        <p>我们通过移动端app，向青少传授编程知识，让青少年通过学习编写代码了解计算机，能更好的适应将来的大数据，虚拟现实，人工智能社会，并且通过游戏的开发，让青少年了解到整个游戏的制作与开发，从而远离游戏迷途。</p>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  </html>
