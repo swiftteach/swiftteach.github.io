@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>欢迎访问天合天益 tianhetianyi.com</title>
+  <meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport">
+  <style type="text/css">
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+         .outer-container {
+      position: relative;
+      height: 0;
+      padding-bottom: 56.25%;
+    }
+
+    .outer-container2{
+    max-width: 100%;
+    height: auto;
+    }
+
+
+    .BrightcoveExperience {
+      width:90%;
+       height:480px;
+       margin: auto;
+    }
+.center{
+margin: auto;
+}
+
+
+
+  </style>
+
+  <script src="jquery.min.js"></script>
+  <script>
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $.get("http://192.168.0.102:9000/testLogin", function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+    });
+});
+
+/*
+$(document).ready(function(){
+    $("button").click(function(){
+        $.post("/codeclass/getRecommend",
+        {
+          name: "Donald Duck",
+          city: "Duckburg"
+        },
+        function(data,status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+    });
+});
+*/
+
+function getCookie(){
+console.log("getCoookie");
+console.log(document.cookie.split('; '));
+
+}
+</script>
+
+
+</head>
+<body>
+<button>send</button><button onclick="getCookie();">get cookie</button>
+
+<div class="center"><img src="heyi_logo.png"/></div>
+<div class="center">
+  <p>欢迎访问<strong><a href="http://tianhetianyi.com/">天合天益（北京）科技有限公司</a></strong></p>
+</div>
+
+<!-- 直播html代码-->
+
+<div id="player" class="BrightcoveExperience">
+  <script type="text/javascript" charset="utf-8"
+          src="http://yuntv.letv.com/player/vod/bcloud.js"></script>
+
+
+  <script>
+function GetQueryString(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+}
+
+//get the item's detail through the requested id.
+var id = GetQueryString("id")
+
+$.ajax({ 
+    type: 'GET', 
+    url: 'http://192.168.0.102:9000/ajax?id=' + id,
+    data: { get_param: "" }, 
+    dataType: 'json',
+    success: function (data) {
+    alert(data); 
+      var div = document.getElementById('tit');
+      div.innerHTML = div.innerHTML + "+ljljl" + "_" + data.a + "_" + data.b;
+
+      alert(data.a);
+      alert(data.b);
+      //keen……iterate all key with its value
+        // $.each(data, function(index, element) {
+        // alert(index + ";" + element?><mnbv
+        // });
+    }
+});
+
+
+
+// GET the video from the remote server hosted by lecloud
+// alert(GetQueryString("p"));
+var vu = GetQueryString("vu")
+
+
+        var player = new CloudVodPlayer();
+        player.init({uu:"pi2rhvgpfw",vu:vu});
+
+
+
+
+
+
+
+  </script>
+
+
+</div>
+
+<div>
+  <p>欢迎访问<strong><a href="http://tianhetianyi.com/">天合天益</a></strong></p>
+</div>
+
+</body>
+</html>
