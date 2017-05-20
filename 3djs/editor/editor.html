@@ -2,7 +2,7 @@
 <html manifest="editor.appcache">
 	<meta charset="utf-8">
 	<head>
-		<title>_playGnd - editor</title>
+		<title>editor</title>
 		
 		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -289,6 +289,7 @@
 
 			window.URL = window.URL || window.webkitURL;
 
+
 			// deflate
 
 			var decode = function ( string ) {
@@ -308,8 +309,6 @@
 			var templateCode = 'pVRRb9owEH6GX3FlL0GiCXuoNFFAmiiDSZtWtZ3QniYnPmJ3iZ2dnWYw7b/PdhJaKu1pEUmcu/P3nb/PZn5x82X18O12DcKWxXI4b1+DuUDG3XswL9EyyAQjg3Yxqu3+8t0oJIw9FOhHg1TzA/z2o0HKsh856Vrxy0wXmmbwZh+u65AuGeVSzWDafuonpH2hmxkIyTmqEP3jwZMefZ50ncw9i6cL3BnJyoKhbDES1lazJEmJqRwpJXmMFdqkYKlJrCDER/O9Kthho3jy2IXiUqr40YyWjihALf8T9QYtZlbTv0CXQ780uYcILuBU3GCaFzB+DjDON2h3mG4+fUZjWI7ROIji7ydGkLESiU3AZKhwAoSKIyFd9/kctTOMDhMomUWSrHAjNOI68O9rlVmpFTgv6yoaO9OCD37mDhbQSMV1E0ulkHaSWzGB7avwFmUubGtfz+5KFDbwsL1br+PQ/F2X6bo/VcaO+F4eMYKdh+6yXGd1icrG3uKYVZWrXglZ8Oi0wJjrcl2gr/KzwrRWizPyWyRTOSnlE65CNoKr6QR2yXYCb91v6q6etZ0eV9pIr0l8dEhX02kHHgQ+w773kX5Bz48kgYoZi3DQtfNHc4Q96RKswJMbm68fQbhlDIftBj/zghNrnq0g/Fmjse+VdAa69AdybUahCF5yO1r8VTmHgySNtOIVt1HSCWmNs1/VHfuZFe0g6rdSp2Ynbttjt00CbdtmyL7c3/6EtifTnVT/3/EX';
 
 			var defaultCode = decode( templateCode);
-
-
 
 			var QueryString = function () {
 			  // This function is anonymous, is executed immediately and 
@@ -333,6 +332,10 @@
 			  } 
 			    return query_string;
 			} ();
+
+			
+defaultCode = defaultCode.replace("http://brangerbriz.net/labs/threejs_playGnd/js/three.min.js", "http://codeclass.cc/3djs/js/three.js");
+defaultCode = defaultCode.replace("http://brangerbriz.net/labs/threejs_playGnd/js/Detector.js", "http://codeclass.cc/3djs/js/Detector.js");
 
 
 			var documents = [ { filename: 'webgl_sketch', filetype: 'text/plain', autoupdate: true, code: defaultCode } ];
