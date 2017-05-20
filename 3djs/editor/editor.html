@@ -417,7 +417,7 @@
 
 			}, false );
 			buttonUpdate.appendChild( checkbox );
-			buttonUpdate.appendChild( document.createTextNode( 'update' ) );
+			buttonUpdate.appendChild( document.createTextNode( '更新' ) );
 
 			buttonUpdate.addEventListener( 'click', function ( event ) {
 
@@ -428,7 +428,7 @@
 
 			var buttonHide = document.createElement( 'button' );
 			buttonHide.className = 'button';
-			buttonHide.textContent = 'hide code';
+			buttonHide.textContent = '隐藏';
 			buttonHide.addEventListener( 'click', function ( event ) {
 
 				toggle();
@@ -472,39 +472,39 @@
 
 
 			// Changed SHARE BUTTON TO 'SNIPPETS' ------------------------------------------ ../n!ck
-			var buttonSnippets = document.createElement( 'button' );
-			buttonSnippets.className = 'button';
-			buttonSnippets.textContent = 'Snippets';
-			buttonSnippets.addEventListener( 'click', function ( event ) {
 
-				var dom = document.createElement( 'div' );
-				dom.innerHTML = '';
+			// var buttonSnippets = document.createElement( 'button' );
+			// buttonSnippets.className = 'button';
+			// buttonSnippets.textContent = 'Snippets';
+			// buttonSnippets.addEventListener( 'click', function ( event ) {
 
-				var snip = document.getElementById( 'snip' );
-				snip.style.display = 'block';
+			// 	var dom = document.createElement( 'div' );
+			// 	dom.innerHTML = '';
 
-				dom.style.width = '400px';
-				dom.style.padding = '5px';
-				dom.style.marginTop = '20px';
-				dom.style.border = '0px';
+			// 	var snip = document.getElementById( 'snip' );
+			// 	snip.style.display = 'block';
 
-				popup.set( dom );
-				popup.show();
+			// 	dom.style.width = '400px';
+			// 	dom.style.padding = '5px';
+			// 	dom.style.marginTop = '20px';
+			// 	dom.style.border = '0px';
 
-				dom.focus();
-				dom.select();
+			// 	popup.set( dom );
+			// 	popup.show();
+
+			// 	dom.focus();
+			// 	dom.select();
 
 
-			}, false );
-			menu.appendChild( buttonSnippets );
+			// }, false );
+			// menu.appendChild( buttonSnippets );
 
 			var buttonReset = document.createElement( 'button' );
 			buttonReset.className = 'button';
-			buttonReset.textContent = 'reset';
+			buttonReset.textContent = '重置';
 			buttonReset.addEventListener( 'click', function ( event ) {
 
-				if ( confirm( 'Are you sure?' ) === true ) {
-
+				if ( confirm( '您确定要恢复最初的状态么' ) === true ) {
 
 
 					if(QueryString.data != undefined){
@@ -523,7 +523,7 @@
 			// Changed ABOUT BUTTON TO 'ARCHIVE' ------------------------------------------ ../n!ck
 			var buttonArchive = document.createElement( 'button' );
 			buttonArchive.className = 'button';
-			buttonArchive.textContent = 'archive_It';
+			buttonArchive.textContent = '保存';
 			buttonArchive.addEventListener( 'click', function ( event ) {
 
 				alert('don\'t forget to give shoutOutz + attribute your work with in a comment in your code \n\nonce you save your sketch there\'s no going back :)');
@@ -881,7 +881,7 @@
 
 				if ( element.style.display === '' ) {
 
-					buttonHide.textContent = 'show code';
+					buttonHide.textContent = '显示';
 
 					element.style.display = 'none';
 					buttonUpdate.style.display = 'none';
@@ -889,7 +889,7 @@
 
 				} else {
 
-					buttonHide.textContent = 'hide code';
+					buttonHide.textContent = '隐藏';
 
 					element.style.display = '';
 					buttonUpdate.style.display = '';
