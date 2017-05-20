@@ -333,10 +333,9 @@
 			    return query_string;
 			} ();
 
-			
-defaultCode = defaultCode.replace("http://brangerbriz.net/labs/threejs_playGnd/js/three.min.js", "http://codeclass.cc/3djs/js/three.js");
-defaultCode = defaultCode.replace("http://brangerbriz.net/labs/threejs_playGnd/js/Detector.js", "http://codeclass.cc/3djs/js/Detector.js");
 
+			defaultCode = defaultCode.replace("http://brangerbriz.net/labs/threejs_playGnd/js/three.min.js", "http://codeclass.cc/3djs/js/three.min.js");
+			defaultCode = defaultCode.replace("http://brangerbriz.net/labs/threejs_playGnd/js/Detector.js", "http://codeclass.cc/3djs/js/Detector.js");
 
 			var documents = [ { filename: 'webgl_sketch', filetype: 'text/plain', autoupdate: true, code: defaultCode } ];
 
@@ -887,8 +886,9 @@ defaultCode = defaultCode.replace("http://brangerbriz.net/labs/threejs_playGnd/j
 					buttonHide.textContent = '显示';
 
 					element.style.display = 'none';
+					element.style.background = '#ffffff';
 					buttonUpdate.style.display = 'none';
-					buttonSnippets.display = 'none';
+					// buttonSnippets.display = 'none';
 
 				} else {
 
@@ -896,7 +896,7 @@ defaultCode = defaultCode.replace("http://brangerbriz.net/labs/threejs_playGnd/j
 
 					element.style.display = '';
 					buttonUpdate.style.display = '';
-					buttonSnippets.display = '';
+					// buttonSnippets.display = '';
 
 				}
 
