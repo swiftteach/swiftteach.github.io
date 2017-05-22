@@ -218,71 +218,6 @@
 		<div id="preview"></div>
 		<div id="editor"></div>
 		<div id="toolbar"></div>
-		<div id="popup">
-			<div id="snip">
-
-				<a href="https://gist.github.com/nbriz/90cabdeb21ea2510c5ae" target="_blank" onclick="closeThis()"><div>
-					<img src="../images/snip1.gif"> <br> rotate mesh
-				</div></a>
-
-				<a href="https://gist.github.com/nbriz/41ba4223df04c3fa4abd" target="_blank" onclick="closeThis()"><div>
-					<img src="../images/snip2.gif"> <br> swing camera and/or mesh
-				</div></a>
-
-				<a href="https://gist.github.com/nbriz/65bca341f3b7eadb2874" target="_blank" onclick="closeThis()"><div>
-					<img src="../images/snip3.gif"> <br> keep camera focused on mesh
-				</div></a>
-
-				<a href="https://gist.github.com/nbriz/27eab66b01f3cc09d8c2" target="_blank" onclick="closeThis()"><div>
-					<img src="../images/snip4.gif"> <br> leave trails
-				</div></a>
-
-				<a href="https://gist.github.com/nbriz/0d92ea0b91a81c7dd6fd" target="_blank" onclick="closeThis()"><div>
-					<img src="../images/snip5.gif"> <br> random mesh color
-				</div></a>
-
-				<a href="https://gist.github.com/nbriz/f6187463e7c0bb9166ac" target="_blank" onclick="closeThis()"><div>
-					<img src="../images/snip6.gif"> <br> oscillate mesh hue
-				</div></a>
-
-				<a href="https://gist.github.com/nbriz/24b503ab96153947fbfe" target="_blank" onclick="closeThis()"><div>
-					<img src="../images/snip7.gif"> <br> oscillate mesh saturation
-				</div></a>
-
-				<a href="https://gist.github.com/nbriz/c6ebef10e97cec354350" target="_blank" onclick="closeThis()"><div>
-					<img src="../images/snip8.gif"> <br> loop (multiply) mesh
-				</div></a>
-
-				<a href="https://gist.github.com/nbriz/c6ebef10e97cec354350" target="_blank" onclick="closeThis()"><div>
-					<img src="../images/snip9.gif"> <br> loop mesh (with trails)
-				</div></a>
-
-				<a href="https://gist.github.com/nbriz/4ee2c35872e44fddc494" target="_blank" onclick="closeThis()"><div>
-					<img src="../images/snip10.gif"> <br> morph (stretch) points
-				</div></a>
-
-				<a href="https://gist.github.com/nbriz/9fbfcb815feea9f3ab5a" target="_blank" onclick="closeThis()"><div>
-					<img src="../images/snip11.gif"> <br> morph all points randomly
-				</div></a>
-
-				<a href="https://gist.github.com/nbriz/d994b193cd2090cb93bf" target="_blank" onclick="closeThis()"><div>
-					<img src="../images/snip12.gif"> <br> create particles
-				</div></a>
-
-				<a href="https://gist.github.com/nbriz/7142d0759d6bca236bb7" target="_blank" onclick="closeThis()"><div>
-					<img src="../images/snip13.gif"> <br> create text
-				</div></a>
-
-				<a href="https://gist.github.com/nbriz/53419c61260c1591b500" target="_blank" onclick="closeThis()"><div>
-					<img src="../images/snip14.gif"> <br> dither shader
-				</div></a>
-
-				<a href="https://gist.github.com/nbriz/ab18e9862ee9a4c1badc" target="_blank" onclick="closeThis()"><div>
-					<img src="../images/snip15.gif"> <br> render as ASCII
-				</div></a>
-
-			</div>
-		</div>
 
 
 		<script>
@@ -293,20 +228,16 @@
 			// deflate
 
 			var decode = function ( string ) {
-
 				return RawDeflate.inflate( window.atob( string ) );
-
 			};
 
 			var encode = function ( string ) {
-
 				return window.btoa( RawDeflate.deflate( string ) );
 
 			};
 
-			//
 
-			var templateCode = 'pVRRb9owEH6GX3FlL0GiCXuoNFFAmiiDSZtWtZ3QniYnPmJ3iZ2dnWYw7b/PdhJaKu1pEUmcu/P3nb/PZn5x82X18O12DcKWxXI4b1+DuUDG3XswL9EyyAQjg3Yxqu3+8t0oJIw9FOhHg1TzA/z2o0HKsh856Vrxy0wXmmbwZh+u65AuGeVSzWDafuonpH2hmxkIyTmqEP3jwZMefZ50ncw9i6cL3BnJyoKhbDES1lazJEmJqRwpJXmMFdqkYKlJrCDER/O9Kthho3jy2IXiUqr40YyWjihALf8T9QYtZlbTv0CXQ780uYcILuBU3GCaFzB+DjDON2h3mG4+fUZjWI7ROIji7ydGkLESiU3AZKhwAoSKIyFd9/kctTOMDhMomUWSrHAjNOI68O9rlVmpFTgv6yoaO9OCD37mDhbQSMV1E0ulkHaSWzGB7avwFmUubGtfz+5KFDbwsL1br+PQ/F2X6bo/VcaO+F4eMYKdh+6yXGd1icrG3uKYVZWrXglZ8Oi0wJjrcl2gr/KzwrRWizPyWyRTOSnlE65CNoKr6QR2yXYCb91v6q6etZ0eV9pIr0l8dEhX02kHHgQ+w773kX5Bz48kgYoZi3DQtfNHc4Q96RKswJMbm68fQbhlDIftBj/zghNrnq0g/Fmjse+VdAa69AdybUahCF5yO1r8VTmHgySNtOIVt1HSCWmNs1/VHfuZFe0g6rdSp2Ynbttjt00CbdtmyL7c3/6EtifTnVT/3/EX';
+			var templateCode = "lVRRb9owEH6GX3FlL6kECdNUaaK00tSyMmlbq5YJ7dHYl8SdY2e2U0qn/fednaRA34YCMffdfd/57uz5yfXt1ern3QJKX6nL4bx9DeYlMkHvwbxCz4CXzDr0F6PG55OPowg4v1MYVoONETv4E1aDDeO/CmsaLSbcKGNn8C6Pn/MIV8wWUs9g2v41T2hzZbYzKKUQqKP1byDPevZ51mUyDyqXAwIDfjKZBN/vt6vFDCzWinEEX1rEtJI6fXSwlb7cWyaKeXQ+AN5A44IzQmuEVfQiSMmNZXZHzJNJu0duZe3BWX4xKr2vZ1nGjUCumHMp59kH8egyeg6VR5eUfYz7L4pr9Mi9sW8Yus0yIcBQyhbw2aPVTAHlm0uFQEZs0+1qcxA6kDkkcAKv5FvcFApO9wYivkG/xs3N12/oHCswOY1tCN8nZoGzCi0bg+OocUy11oIE7XmPF2hoROxuDBVV00qmaIWuPI/6eaO5l0YDTU9TJ6c0JrHzIXINF9QlLcw2lVqjXUvhyzEs35iXKIvStwPTq5OLxi2slveLRRqTv++QLvtXz5SEH+QLJrAO1B0qDG8q1D4NQ5Wyuibvq1IqkbxuMBWmWigMXiEqhrW1OBK/Q+tqKqV8wquIJnA2HcM6W47hPT1T+vSqbXhaGydDTdIXYjqbTjvyWOAj7odg6Te0/8kyqJnzCDvTUH9omCC3pooT3Xfj5seXOBjDYXukjnohLNvuW2Hxd0On4JOW1ECCP1tKM4lOcKhNsiRI80AEBlzQKaUuQGpqOxGEdZAkAyAd7F1XymCnbOuW6bg57SLph6urb1fuNutucGIibeIRPTxj4ZaIt8OQbotwf/0D";
 
 			var defaultCode = decode( templateCode);
 
@@ -332,10 +263,6 @@
 			  } 
 			    return query_string;
 			} ();
-
-
-			defaultCode = defaultCode.replace("http://brangerbriz.net/labs/threejs_playGnd/js/three.min.js", "http://codeclass.cc/3djs/js/three.min.js");
-			defaultCode = defaultCode.replace("http://brangerbriz.net/labs/threejs_playGnd/js/Detector.js", "http://codeclass.cc/3djs/js/Detector.js");
 
 			var documents = [ { filename: 'webgl_sketch', filetype: 'text/plain', autoupdate: true, code: defaultCode } ];
 
@@ -383,9 +310,6 @@
 			} );
 
 			editor.on( 'change', function() {
-
-				// buttonSave.style.display = '';
-				// buttonDownload.style.display = 'none';
 
 				if ( documents[ 0 ].autoupdate === false ) return;
 
@@ -454,52 +378,6 @@
 			// menu.style.display = 'none'; //show menu on load   ../n!ck
 			toolbar.appendChild( menu );
 
-			// Don't know that we really need Download button ------------------------------------------ ../n!ck
-			// var buttonSave = document.createElement( 'button' );
-			// buttonSave.className = 'button';
-			// buttonSave.textContent = 'd/l';
-			// buttonSave.addEventListener( 'click', function ( event ) {
-
-			// 	save();
-
-			// }, false );
-			// menu.appendChild( buttonSave );
-
-			// var buttonDownload = document.createElement( 'a' );
-			// buttonDownload.className = 'button';
-			// buttonDownload.style.display = 'none';
-			// buttonDownload.download = 'index.html';
-			// buttonDownload.textContent = 'download';
-			// menu.appendChild( buttonDownload );
-
-
-			// Changed SHARE BUTTON TO 'SNIPPETS' ------------------------------------------ ../n!ck
-
-			// var buttonSnippets = document.createElement( 'button' );
-			// buttonSnippets.className = 'button';
-			// buttonSnippets.textContent = 'Snippets';
-			// buttonSnippets.addEventListener( 'click', function ( event ) {
-
-			// 	var dom = document.createElement( 'div' );
-			// 	dom.innerHTML = '';
-
-			// 	var snip = document.getElementById( 'snip' );
-			// 	snip.style.display = 'block';
-
-			// 	dom.style.width = '400px';
-			// 	dom.style.padding = '5px';
-			// 	dom.style.marginTop = '20px';
-			// 	dom.style.border = '0px';
-
-			// 	popup.set( dom );
-			// 	popup.show();
-
-			// 	dom.focus();
-			// 	dom.select();
-
-
-			// }, false );
-			// menu.appendChild( buttonSnippets );
 
 			var buttonReset = document.createElement( 'button' );
 			buttonReset.className = 'button';
@@ -520,7 +398,6 @@
 				}
 
 			}, false );
-			// menu.appendChild( buttonReset );//do not show this button by keen
 
 			// Changed ABOUT BUTTON TO 'ARCHIVE' ------------------------------------------ ../n!ck
 			var buttonArchive = document.createElement( 'button' );
@@ -593,88 +470,6 @@
 
 
 			}, false );
-			// menu.appendChild( buttonArchive );//do not show this button by keen
-
-
-			// popup
-
-			var popup = ( function () {
-
-				var scope = this;
-
-				var element = document.getElementById( 'popup' );
-				element.style.display = 'none';
-
-				var buttonClose = ( function () {
-
-					var svg = document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' );
-					svg.setAttribute( 'width', 32 );
-					svg.setAttribute( 'height', 32 );
-
-					var path = document.createElementNS( 'http://www.w3.org/2000/svg', 'path' );
-					path.setAttribute( 'd', 'M 9,12 L 11,10 L 15,14 L 19,10 L 21,12 L 17,16 L 21,20 L 19,22 L 15,18 L 11,22 L 9,20 L 13,16' );
-					path.setAttribute( 'fill', 'rgb(255,255,255)' );
-					svg.appendChild( path );
-
-					return svg;
-
-				} )();
-
-				buttonClose.style.position = 'absolute';
-				buttonClose.style.top = '5px';
-				buttonClose.style.right = '5px';
-				buttonClose.style.cursor = 'pointer';
-				buttonClose.addEventListener( 'click', function ( event ) {
-
-					scope.hide();
-
-				}, false );
-				element.appendChild( buttonClose );
-
-				var content = document.createElement( 'div' );
-				element.appendChild( content );
-
-				var update = function () {
-
-					element.style.left = ( ( window.innerWidth - element.offsetWidth ) / 2 ) + 'px';
-					element.style.top = ( ( window.innerHeight - element.offsetHeight ) / 2 ) + 'px';
-
-				};
-
-				window.addEventListener( 'load', update, false );
-				window.addEventListener( 'resize', update, false );
-
-				//
-
-				this.show = function () {
-
-					element.style.display = '';
-					update();
-
-				};
-
-				this.hide = function () {
-
-					element.style.display = 'none';
-
-				};
-
-				this.set = function ( value ) {
-
-					while ( content.children.length > 0 ) {
-
-						content.removeChild( content.firstChild );
-
-					}
-
-					content.appendChild( value );
-
-				};
-
-				return this;
-
-			} )();
-
 
 			// events
 
@@ -860,24 +655,6 @@
 
 			};
 
-			// var save = function () {
-
-			// 	documents[ 0 ].code = editor.getValue();
-
-			// 	localStorage.codeeditor = JSON.stringify( documents );
-
-			// 	var blob = new Blob( [ editor.getValue() ], { type: documents[ 0 ].filetype } );
-			// 	var objectURL = URL.createObjectURL( blob );
-
-			// 	// buttonDownload.href = objectURL;
-
-			// 	var date = new Date();
-			// 	// buttonDownload.download = documents[ 0 ].filename;
-
-			// 	// buttonSave.style.display = 'none';
-			// 	// buttonDownload.style.display = '';
-
-			// };
 
 			var toggle = function () {
 
@@ -904,8 +681,6 @@
 
 			update();
 
-			// buttonHide.click(); // ----- HIDE THE SOURCE ONLOAD ../n!ck
-
 			// CHECK IF COMING FROM FORK
 
 			if(QueryString.data != undefined){
@@ -917,20 +692,7 @@
 			function closeThis() { popup.hide(); }
 
 
-			//save();
-
 		</script>
-
-		// <script>
-		//   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		//   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		//   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		//   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		//   ga('create', 'UA-6098550-26', 'brangerbriz.net');
-		//   ga('send', 'pageview');
-
-		// </script>	
 
 	</body>
 </html>

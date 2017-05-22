@@ -1,4 +1,4 @@
-
+//generate code showing in the gui editor page
 
 			var meshCode = "", matProperties = "", geoProperties = "";
 			var matList = [ "new THREE.MeshNormalMaterial({","new THREE.MeshBasicMaterial({","new THREE.MeshLambertMaterial({","new THREE.MeshPhongMaterial({"
