@@ -343,7 +343,7 @@
 
 			}, false );
 			buttonUpdate.appendChild( checkbox );
-			buttonUpdate.appendChild( document.createTextNode( '更新' ) );
+			buttonUpdate.appendChild( document.createTextNode( 'realtime updating' ) );
 
 			buttonUpdate.addEventListener( 'click', function ( event ) {
 
@@ -354,7 +354,7 @@
 
 			var buttonHide = document.createElement( 'button' );
 			buttonHide.className = 'button';
-			buttonHide.textContent = '隐藏';
+			buttonHide.textContent = 'hide code';
 			buttonHide.addEventListener( 'click', function ( event ) {
 
 				toggle();
@@ -660,7 +660,7 @@
 
 				if ( element.style.display === '' ) {
 
-					buttonHide.textContent = '显示';
+					buttonHide.textContent = 'show code';
 
 					element.style.display = 'none';
 
@@ -670,7 +670,7 @@
 
 				} else {
 
-					buttonHide.textContent = '隐藏';
+					buttonHide.textContent = 'hide code';
 
 					element.style.display = '';
 					buttonUpdate.style.display = '';
