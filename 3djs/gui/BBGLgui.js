@@ -37,9 +37,9 @@
 			// 									    CODE FOLDER 	|
 			// 	
 
-			var c = gui.addFolder('code');
-			c.add(codez,'selectMeshCode').name('select_code');
-			c.add(codez,'background').onChange(function(v){
+			var c = gui.addFolder('代码(code)');
+			c.add(codez,'selectMeshCode').name('选择代码(select code)');
+			c.add(codez,'background').name('背景色(background)').onChange(function(v){
 				if(v==true){
 					var c = document.getElementById('mcnsl').style;
 					c.background = "#fff";
@@ -48,7 +48,7 @@
 					c.background = "none";
 				}
 			});
-			c.add(cnsl,'opacity',0,1);
+			c.add(cnsl,'opacity',0,1).name('透明度(opacity)');
 
 
 
@@ -64,18 +64,18 @@
 						meshObj.make();
 						geometriezGUI(meshObj.geometry);
 						if(matgui!=undefined){materialzGUI(meshObj.material);}
-				});
+				}).name("几何图形(geometry)");
 				m.add(meshObj, 'material',{normal:0,basic:1,lambert:2,phong:3}).onChange(function(v) {
 						meshObj.make();
 						materialzGUI(meshObj.material);
-				});
-				m.add(meshObj,'openGeo').name('OPEN_GEOMETRY_CNTRL');
-				m.add(meshObj,'openMat').name('OPEN_MATERIAL_CNTRL');
+				}).name("材料(material)");
+				m.add(meshObj,'openGeo').name('打开几何图形控制面板');
+				m.add(meshObj,'openMat').name('打开材料控制面板');
 
 				m.add(meshObj,"smooth").onChange(function(){				
 					meshObj.make(); 
-				});
-				m.add(meshObj,"castShadow").onChange(function(v){
+				}).name("平滑开关(smooth)");
+				m.add(meshObj,"castShadow").name("投影(castShadow)").onChange(function(v){
 					if(v==true){
 						renderer.shadowMapEnabled = true;
 						meshObj.make();
@@ -100,23 +100,23 @@
 					}
 					updateEnviroCode();
 				});
-				m.add(meshObj,"scale",0.1,2).onChange(function(){
+				m.add(meshObj,"scale",0.1,2).name("缩放(scale)").onChange(function(){
 					mesh.scale.x = mesh.scale.y = mesh.scale.z = meshObj.scale;
 					updateMeshCode();
 				});
-				m.add(meshObj,"posy",0,200).onChange(function(){
+				m.add(meshObj,"posy",0,200).name("Y坐标位置(posy)").onChange(function(){
 					mesh.position.y = meshObj.posy; 
 					updateMeshCode();
 				});
-				m.add(meshObj,"rotx",0,8).onChange(function(){
+				m.add(meshObj,"rotx",0,8).name("X轴旋转(rotx)").onChange(function(){
 					mesh.rotation.x = meshObj.rotx;
 					updateMeshCode();
 				});
-				m.add(meshObj,"roty",0,8).onChange(function(){
+				m.add(meshObj,"roty",0,8).name("Y轴旋转(roty)").onChange(function(){
 					mesh.rotation.y = meshObj.roty;
 					updateMeshCode();
 				});
-				m.add(meshObj,"rotz",0,8).onChange(function(){
+				m.add(meshObj,"rotz",0,8).name("Z轴旋转(rotz)").onChange(function(){
 					mesh.rotation.z = meshObj.rotz;
 					updateMeshCode();
 				});
@@ -129,15 +129,15 @@
 			// __________________________________/					\
 			// 									    PLANE FOLDER 	|
 			// 														|
-				var p = gui.addFolder('plane');
+				var p = gui.addFolder('平面(plane)');
 				var wftog = false, ptog = false;
-				p.add(planeObj,'toggleWireframe').onChange(function(v){
+				p.add(planeObj,'toggleWireframe').name("线框(toggle wireframe)").onChange(function(v){
 					if(v==true){ planeObj.makeWireframe(); }
 					else { scene.remove( wireplane ); }
 					updateEnviroCode();
 
 					if(planeObj.toggleWireframe == true && wftog == false){
-						p.add(planeObj,'w_scale',1,30).onChange(function(){
+						p.add(planeObj,'w_scale',1,30).name("线框缩放(w_scale)").onChange(function(){
 							if(planeObj.toggleWireframe==true){ planeObj.makeWireframe(); }
 							updateEnviroCode();
 						});
@@ -148,21 +148,21 @@
 					}
 				});
 
-				p.add(planeObj,'togglePlane').onChange(function(v){
+				p.add(planeObj,'togglePlane').name("平面(toggle plane)").onChange(function(v){
 					if(v==true){ planeObj.makePlane(); }
 					else { scene.remove( plane ); }
 					updateEnviroCode();
 
 					if(planeObj.togglePlane == true && ptog == false){
-						p.add(planeObj, 'texture', {mario:0,linen:1,crate:2,dots:3,rock_tile:4,water:5,wood:6,white:7,brillo:8,soup:9}).onChange(function() {
+						p.add(planeObj, 'texture', {mario:0,linen:1,crate:2,dots:3,rock_tile:4,water:5,wood:6,white:7,brillo:8,soup:9}).name("纹理(texture)").onChange(function() {
 							if(planeObj.togglePlane==true){ planeObj.makePlane(); }
 							updateEnviroCode();
 						});
-						p.add(planeObj,'scale',1,30).onChange(function(){
+						p.add(planeObj,'scale',1,30).name("缩放(scale)").onChange(function(){
 							if(planeObj.togglePlane==true){ planeObj.makePlane(); }
 							updateEnviroCode();
 						});
-						p.add(planeObj,'repeat',1,160).onChange(function(){
+						p.add(planeObj,'repeat',1,160).name("重复(repeat)").onChange(function(){
 							if(planeObj.togglePlane==true){ planeObj.makePlane(); }
 							updateEnviroCode();
 						});		
@@ -179,13 +179,13 @@
 			// __________________________________/					\
 			// 									    ENVIRO FOLDER 	|
 			// 														|
-				var e = gui.addFolder('environment');
+				var e = gui.addFolder('环境(environment)');
 				var edeetz = false;
 				// ****BUG**** Firefox throwing an error: 
 				//uncaught exception: Failed to interpret color arguments
 				if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){/*IS FIREFOX*/}
 				else{
-					e.addColor(bg, 'background').onChange(function(v){
+					e.addColor(bg, 'background').name("背景色(background)").onChange(function(v){
 						bgcode = v;
 						updateEnviroCode();
 					});
@@ -204,20 +204,20 @@
 				// 	}
 				// 	updateEnviroCode();
 				// });
-				e.add(enviro,'fog').onChange(function(v){
+				e.add(enviro,'fog').name("烟雾(fog)").onChange(function(v){
 					if(v==true){
 						enviro.ffar = 9000;
 						enviro.makeFog();
 						if(edeetz == false){
-							e.addColor( enviro, 'fclr').name('color').onChange( function() {
+							e.addColor( enviro, 'fclr').name('颜色(color)').onChange( function() {
 							  	scene.fog.color.setHex( dec2hex(enviro.fclr) ); 
 							  	updateEnviroCode();
 							}); 
-							e.add(enviro,'fnear',1,10000).name('near').onChange(function(){
+							e.add(enviro,'fnear',1,10000).name('近(near)').onChange(function(){
 								enviro.makeFog();
 								updateEnviroCode();
 							});
-							e.add(enviro,'ffar',1,10000).name('far').onChange(function(){
+							e.add(enviro,'ffar',1,10000).name('远(far)').onChange(function(){
 								enviro.makeFog();
 								updateEnviroCode();
 							});
@@ -237,9 +237,9 @@
 			// __________________________________/					\
 			// 									    LIGHTS FOLDER 	|
 			// 														|
-				var l = gui.addFolder('lights');
+				var l = gui.addFolder('灯光(lights)');
 				// l.add(lights,'resetLights');
-				l.add(lights,'AmbientLight').onChange(function(v){
+				l.add(lights,'AmbientLight').name("环绕(AmbientLight)").onChange(function(v){
 					if(v==true){
 						if(lightgui!=undefined){lightgui.destroy(); lightgui = undefined;}
 						lights.makeAmbient();
@@ -250,7 +250,7 @@
 					}
 					updateLightCode();
 				});
-				l.add(lights,'HemisphereLight').onChange(function(v){
+				l.add(lights,'HemisphereLight').name("半球(HemisphereLight)").onChange(function(v){
 					if(v==true){
 						if(lightgui!=undefined){lightgui.destroy(); lightgui = undefined;}
 						lights.makeHem();
@@ -261,7 +261,7 @@
 					}
 					updateLightCode();
 				});
-				l.add(lights,'DirectionalLight').onChange(function(v){
+				l.add(lights,'DirectionalLight').name("定向(DirectionalLight)").onChange(function(v){
 					if(v==true){
 						if(lightgui!=undefined){lightgui.destroy(); lightgui = undefined;}
 						lights.makeDir();
@@ -272,7 +272,7 @@
 					}
 					updateLightCode();
 				});
-				l.add(lights,'SpotLight1').onChange(function(v){
+				l.add(lights,'SpotLight1').name("聚光1(SpotLight1)").onChange(function(v){
 					if(v==true){
 						if(lightgui!=undefined){lightgui.destroy(); lightgui = undefined;}
 						lights.makeSpot1();
@@ -283,7 +283,7 @@
 					}
 					updateLightCode();
 				});
-				l.add(lights,'SpotLight2').onChange(function(v){
+				l.add(lights,'SpotLight2').name("聚光2(SpotLight1)").onChange(function(v){
 					if(v==true){
 						if(lightgui!=undefined){lightgui.destroy(); lightgui = undefined;}
 						lights.makeSpot2();
@@ -294,7 +294,7 @@
 					}
 					updateLightCode();
 				});
-				l.add(lights,'open').name('OPEN_LIGHT_CONTROL');
+				l.add(lights,'open').name('打开灯光控制面板(OPEN_LIGHT_CONTROL)');
 
 			}
 
