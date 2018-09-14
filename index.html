@@ -1866,11 +1866,49 @@ var _wpcf7 = {"loaderUrl":"scalia/one-page/wp-content/plugins/contact-form-7/ima
 /* ]]> */
 
 </script>
+
+
+
+
+
+
 <script>
 
-window.location.href="https://studyfordream.com/assets/store/product.html";
+//window.location.href="https://studyfordream.com/assets/store/product.html";
 
+  
+  
+  
+  
+  var browser_agent = navigator.useragent;
+    //Ϊie
+    if(browser_agent.indexof("msie")!=-1){
+        var a=navigator.browserlanguage;
+        if(a !="zh-cn"){
+            //location.href="https://studyfordream.com/assets/store/product.html"；
+        }else{
+          location.href="https://studyfordream.com/assets/store/product.html";
+        }
+    //ie
+    }else{
+        var b=navigator.language;
+        if(b!="zh-cn"){
+          //
+        } else {
+          location.href="https://studyfordream.com/assets/store/product.html";
+        }
+      }
 </script>
+
+
+
+
+
+
+
+
+
+
 <script type="text/javascript"
         src="scalia/one-page/wp-content/plugins/contact-form-7/includes/js/scripts.js"></script>
 <script type="text/javascript"
