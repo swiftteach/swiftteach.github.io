@@ -1879,10 +1879,10 @@ var _wpcf7 = {"loaderUrl":"scalia/one-page/wp-content/plugins/contact-form-7/ima
   $.ajax({
     type:"GET"，
     url:"http://ip-api.com/json",
-    content-type:"application/json",
+    dataType: 'json',
     success:function(msg){
         alert(msg["country"]);//msg就是页面返回的图片地址
-    }
+    },
     error:function(){
         alert("error");
     }
