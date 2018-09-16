@@ -1,2 +1,0 @@
-# swiftteach.github.io
-d

@@ -19,7 +19,9 @@
 .slides,
 .flex-control-nav,
 .flex-direction-nav {margin: 0; padding: 0; list-style: none;}
-
+.flex-control-nav{
+	margin: -17px;
+}
 /* Icon Fonts
 *********************************/
 /* Font-face Icons */

@@ -3279,16 +3279,16 @@ h5.resp-accordion {
 .sc-dropcap .sc-dropcap-letter {
 	float: left;
 	position: relative;
-	font-size: 94.445%;
+	/* font-size: 94.445%; */
 	border-radius: 50%;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	overflow: hidden;
 	margin-right: 15px;
 	text-align: center;
-	width: 70px;
+/* 	width: 70px;
 	height: 70px;
-	line-height: 66px;
+	line-height: 66px; */
 }
 .sc-dropcap.sc-dropcap-style-medium .sc-dropcap-letter{
 	width: 50px;
